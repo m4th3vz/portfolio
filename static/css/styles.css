@@ -402,14 +402,23 @@ img {
   text-decoration: none;
   color: #333;
 }
+
+/* modificado */
 .thumbnail .img {
   display: block;
   width: 100%;
+  height: 180px;  /* altura fixa */
   overflow: hidden;
-  height: 180px;
   margin: 0 0 20px;
   position: relative;
 }
+.thumbnail .img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+/* modificado */
+
 .thumbnail .title {
   text-transform: uppercase;
   margin: 0 2em;
